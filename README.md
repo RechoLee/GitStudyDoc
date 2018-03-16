@@ -39,10 +39,10 @@ Git有什么特点？简单来说就是：高端大气上档次！<br/>
 ## Git使用相关文章整理
 > 整理了一些关于Git使用的不错的文章，希望能够给你们使用git带来方便，少走弯路
 
-#### Git入门
+### Git入门
 * **[图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)**
 * **[搬进 Github](http://gitbeijing.com/)**
 
-#### Git合并时候冲突处理
+### Git合并时候冲突处理
 * **[使用git时候的冲突](https://www.cnblogs.com/dfyg-xiaoxiao/p/6938904.html)**
 * **[冲突合并工具Meld](http://meldmerge.org/)**
