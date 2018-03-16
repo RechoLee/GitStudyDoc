@@ -44,5 +44,10 @@ Git有什么特点？简单来说就是：高端大气上档次！<br/>
 * **[搬进 Github](http://gitbeijing.com/)**
 
 ### Git合并时候冲突处理
-* **[使用git时候的冲突](https://www.cnblogs.com/dfyg-xiaoxiao/p/6938904.html)**
+* **[使用git时候的冲突](https://lrita.github.io/2017/05/14/use-meld-as-git-tool/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)**
 * **[冲突合并工具Meld](http://meldmerge.org/)**
+
+## Git的分支
+> Git的一个强大之处就是它的分支管理，十分的方便
+
+首先看下面的这张图很好的诠释了分支的概念![merge1](./img/merge1.png)
