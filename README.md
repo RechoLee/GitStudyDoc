@@ -51,3 +51,27 @@ Git有什么特点？简单来说就是：高端大气上档次！<br/>
 > Git的一个强大之处就是它的分支管理，十分的方便
 
 首先看下面的这张图很好的诠释了分支的概念![merge1](./img/merge1.png)
+## 关于.gitignore
+> **GitHub上各种项目的[.gitignore](https://github.com/RechoLee/gitignore)只需要复制到你的项目中即可**
+
+### 源起
+在使用git这个多人协作的代码版本控制工具时，为了避免每次提交修改代码时，一些预期外的无用文件的改动同时被提交并加入版本控制，需要将一些和代码无关的无用文件排除在版本控制外，此时也就需要使用.gitignore文件来指定这些需要忽略的文件信息。
+
+不同类型的工程都有一些通用的.gitignore范本，一般在项目初始化以后，直接按照范本加入.gitignore文件即可，这些使用.gitignore文件指定的忽略文件是不会被推送到远程仓库的，在以后的coding中就不用再关心这些被忽略的文件了。
+### 问题
+> .gitignore不起作用
+
+#### case
+1. 之前配置过.gitignore文件了，又另外追加别的忽略文件
+2. 之前未加入.gitignore文件，现在又想追加一个
+
+**上面的情况下.gitignore文件会不起作用**
+### 解决办法
+**原因：**这是由于.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的
+
+**处理：**先把本地缓存删除（改变成未track状态），然后再提交
+``` git
+git rm -r --cached .
+git add .
+git commit -m 'update gitignore'
+```
