@@ -3,8 +3,8 @@
 > 在使用Git进行版本控制之前你需要先了解一下基础的Git相关的语法，当然
 你也可以先尝试快速入门，有兴趣的话可以clone此项目参与到说明文档的
 编写中，也可以把你的问题投稿给我，我会第一时间处理并发布更新。详
-情可以查看这个**[帮助文档pdf版](http://192.168.0.147:3000/test/FirstTestRepos/src/master/help-gogs.pdf)**,这篇帮助文档只是作为一个快速入门的指导，
-关于更加详细的Git使用方法可以参考**[Git官网帮助文档](https://git-scm.com/book/zh/v2)**，而且基本可以解决
+情可以查看这个<strong>[帮助文档pdf版](http://192.168.0.147:3000/test/FirstTestRepos/src/master/help-gogs.pdf)</strong>，这篇帮助文档只是作为一个快速入门的指导，
+关于更加详细的Git使用方法可以参考<strong>[Git官网帮助文档](https://git-scm.com/book/zh/v2)<strong>，而且基本可以解决
 你使用过程中出现的所有问题。
 
 ## 使用之前
@@ -67,9 +67,11 @@ Git有什么特点？简单来说就是：高端大气上档次！<br/>
 
 **上面的情况下.gitignore文件会不起作用**
 ### 解决办法
-__原因:__这是由于.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的
+##### 原因:
+这是由于.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的
 
- **处理:**先把本地缓存删除（改变成未track状态），然后再提交
+##### 处理:
+先把本地缓存删除（改变成未track状态），然后再提交
 ``` git
 git rm -r --cached .
 git add .
