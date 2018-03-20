@@ -77,3 +77,19 @@ git rm -r --cached .
 git add .
 git commit -m 'update gitignore'
 ```
+## 创建PR(合并请求)
+PR 在整个 Github Flow 流程中占有核心位置。其实 PR 的目的就是讨论，且整个讨论过程是围绕着实打实的代码
+### 快速PR
+快速PR只需在网页上修改，然后提交一个快速PR即可
+
+## GitHubFlow
+> 说白了，就是给一个项目开发新功能要走的几步。整个过程的核心是"PR(合并请求)"
+> 看下图是github flow的流程
+![GitHubFlow](./img/gf.png)
+
+### GitHubFlow主要有以下几点(对应上图中的点)
+1.创建新的话题分支
+2.不断实现功能，做成一个新版本
+3.发起”拉取请求“（ Pull Request ）PR
+4.大家讨论,这是一个代码审核的过程
+5.讨论审核通过，把话题分支的内容合并到 master分支
